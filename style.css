@@ -1,0 +1,1113 @@
+body{
+	font-family: arial;
+	padding: 0;
+	margin: 0;
+}
+/*untuk mengatur nav*/
+nav{
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	height: 50px;
+	background-color: coral;
+	line-height: 50px;
+	font-family: sans-serif;
+	border-bottom: solid 2px rgba(0,0,0,.3);
+	z-index: 2;
+}
+
+nav ul{
+	float: right;
+	margin: 0;
+	height: 50px;
+	margin-right: 1.9rem;
+}
+
+nav ul li{
+	list-style-type: none;
+	display: inline-block;
+}
+
+nav ul li a{
+	text-decoration: none;
+	font-family: arial;
+	font-size: 14px;
+	text-shadow: none;
+	width: auto;
+	margin: 0px;
+	font-weight: normal;
+	color: white;
+	padding: 0px 20px;
+	text-transform: uppercase;
+}
+nav a{
+	display: inline-block;
+	float: left;
+	width: 10%;
+	height: 100%;
+	margin-left: 1.9rem;
+	padding-top: 5px;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+nav a img{
+	width: 100%;
+	height: 40px;
+}
+
+nav a:hover img{
+	height: 41px;
+}
+
+nav ul li a:hover{
+	font-size: 14px;
+	text-shadow: none;
+	background-color: white;
+	color: black;
+	font-weight: bold;
+	border-bottom: solid 2px coral;
+	border-radius: 2px;
+}
+
+nav .nama{
+	float: right;
+	padding-right: 20px;
+	font-weight: bold;
+}
+
+nav .dropdown {
+	float: right;
+	margin-top: 5px;
+	padding: auto 0px;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	margin-right: 1.9rem;
+  	overflow: hidden;
+  	cursor: pointer;
+}
+
+nav .dropdown img {
+	background-color: rgba(255,255,255, 0.8);
+	width: 100%;
+	height: 100%;
+	border: none;
+	outline: none;
+	margin: 0;
+}
+
+nav .dropdown:hover {
+	margin-top: 3px;
+	border: solid 2px rgba(0,0,0,.2);
+}
+
+nav .dropdown-content {
+	right: 1.9rem;
+	top: 50px;
+  	display: none;
+  	position: absolute;
+  	background-color: #f9f9f9;
+  	min-width: 160px;
+  	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  	z-index: 1;
+}
+
+nav .dropdown-content a {
+	margin:0;
+	width: auto;
+  	float: none;
+  	font-size: 14px;
+  	color: black;
+  	padding: 0px 16px;
+  	text-decoration: none;
+  	display: block;
+  	text-align: left;
+}
+
+nav .dropdown-content a:hover {
+  	background-color: #ddd;
+}
+
+nav .dropdown:hover .dropdown-content {
+  	display: block;
+}
+
+.clear{
+	clear: both;
+}
+
+.container{
+	width: 95%;
+	margin: 100px auto 0px auto;
+	padding: 0;
+	background-color: 
+}
+
+.container .thumb{
+	width: 65%;
+	padding-top: 20px;
+	margin-right: 10px;
+	float: left;
+}
+
+.container .thumb img{
+	width: 100%;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.5);
+	border-radius: 10px 0px 10px 0px;
+	opacity: 0.7;
+}
+
+.container .thumb .box{
+	width: 100%;
+	height: 120px;
+	top: -150px;
+	position: relative;
+	padding-left: 20px;
+}
+
+.container .thumb .box .left{
+	width: 49%;
+	height: 100%;
+	float: left;
+	border-right: solid 5px rgba(0,0,0,.3);
+}
+
+.container .thumb .box .right{
+	padding-top: 13px;
+	width: 50%;
+	height: 100%;
+	float: right;
+}
+
+.container .thumb .box .left span{
+	padding-right: 20px; 
+	display: block;
+	margin-top: 35px;
+	position: relative;
+	text-align: right;
+	font-family: Arial;
+	font-size: 35px;
+	color: coral;
+	text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+}
+
+.container .thumb .box .right span{
+	padding-left: 20px; 
+	display: block;
+	position: relative;
+	text-align: left;
+	font-family: Arial;
+	font-size: 25px;
+	color: white;
+	text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+}
+
+.container .register{
+	width: 30%;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 150px;
+	padding-bottom: 30px;
+	text-align: center;
+	border: solid 2px black;
+	border-radius: 10px;
+}
+
+.container .register .radioOption{
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	border: solid 1px black;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.container .register .radioOption input[type="radio"]{
+	opacity: 0;
+	position: fixed;
+	width: 0;
+}
+
+.container .register .radioOption label{
+	display: inline-block;
+	padding: 5px 10px;
+}
+
+.container .register .radioOption label:hover{
+	background-color: coral;
+	cursor: pointer;
+}
+
+.container .register .radioOption input[type="radio"]:checked + label{
+	background-color: coral;
+	color: white;
+}
+
+.container .register input[type="text"], .container .register input[type="password"]{
+	width: 65%;
+	height: 30px;
+	padding: 2px 5px;
+	margin-bottom: 10px;
+	outline: none;
+	border: solid 1px grey;
+	border-radius: 5px;
+	box-sizing: border-box;
+}
+
+.container .register input[type="text"]:focus, .container .register input[type="password"]:focus{
+	border-color: coral;
+	border-width: 2px;
+	color: black;
+}
+
+.container .register textarea{
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	width: 65%;
+	height: 80px;
+	padding: 2px 5px;
+	margin-bottom: 10px;
+	outline: none;
+	border: solid 1px grey;
+	border-radius: 5px;
+	box-sizing: border-box;
+}
+
+.container .register textarea:focus{
+	border-color: coral;
+	border-width: 2px;
+	color: black;
+}
+
+.container .register input[type="file"]{
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	width: 65%;
+}
+
+.container .register input[type="submit"]{
+	margin-top: 20px;
+	background-color: transparent;
+	border-style: none;
+	border-radius: 3px;
+	padding: 10px 30px; 
+	box-shadow: 1px 1px rgba(0,0,0,0.3);
+}
+
+.container .register input[type="submit"]:hover{
+	box-shadow: 2px 2px rgba(0,0,0,0.5);
+	background-color: coral;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.container .register span{
+	display: inline-block;
+	margin-top: 50px;
+}
+
+.container .login{
+	width: 30%;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 30px;
+	text-align: center;
+	border: solid 2px black;
+	border-radius: 10px;
+}
+
+.container .login p{
+	font-weight: bold;
+	font-style: italic;
+	color: red;
+}
+
+.container .login .radioOption{
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	border: solid 1px black;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.container .login .radioOption input[type="radio"]{
+	opacity: 0;
+	position: fixed;
+	width: 0;
+}
+
+.container .login .radioOption label{
+	display: inline-block;
+	padding: 10px 20px;
+}
+
+.container .login .radioOption label:hover{
+	background-color: coral;
+	cursor: pointer;
+}
+
+.container .login .radioOption input[type="radio"]:checked + label{
+	background-color: coral;
+	color: white;
+}
+
+.container .login input[type="text"], .container .login input[type="password"]{
+	width: 60%;
+	height: 30px;
+	padding: 2px 5px;
+	margin-bottom: 10px;
+	outline: none;
+	border-style: none;
+	border-bottom: solid 2px grey;
+	box-sizing: border-box;
+}
+
+.container .login input[type="text"]:focus, .container .login input[type="password"]:focus{
+	border-color: coral;
+	color: coral;
+}
+
+.container .login input[type="submit"]{
+	margin-top: 20px;
+	background-color: transparent;
+	border:solid 1px grey;
+	border-radius: 3px;
+	padding: 10px 30px; 
+}
+
+.container .login input[type="submit"]:hover{
+	background-color: coral;
+	box-shadow: 2px 2px rgba(0,0,0,0.5);
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.container .login span{
+	display: inline-block;
+	margin-top: 50px;
+}
+
+.container .home-login{
+	width: 30%;
+	margin-top: 20px;
+	padding-bottom: 30px;
+	float: right;
+	text-align: center;
+	border: solid 2px black;
+	border-radius: 10px;
+}
+
+.container .home-login .radioOption{
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	border: solid 1px black;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.container .home-login .radioOption input[type="radio"]{
+	opacity: 0;
+	position: fixed;
+	width: 0;
+}
+
+.container .home-login .radioOption label{
+	display: inline-block;
+	padding: 10px 20px;
+}
+
+.container .home-login .radioOption label:hover{
+	background-color: coral;
+	cursor: pointer;
+}
+
+.container .home-login .radioOption input[type="radio"]:checked + label{
+	background-color: coral;
+	color: white;
+}
+
+.container .home-login input[type="text"], .container .home-login input[type="password"]{
+	width: 60%;
+	height: 30px;
+	padding: 2px 5px;
+	margin-bottom: 10px;
+	outline: none;
+	border-style: none;
+	border-bottom: solid 2px grey;
+	box-sizing: border-box;
+}
+
+.container .home-login input[type="text"]:focus, .container .home-login input[type="password"]:focus{
+	border-color: coral;
+	color: coral;
+}
+
+.container .home-login input[type="submit"]{
+	margin-top: 20px;
+	background-color: transparent;;
+	border-style: none;
+	border-radius: 3px;
+	padding: 10px 30px; 
+	box-shadow: 1px 1px rgba(0,0,0,0.3);
+}
+
+
+.container .home-login input[type="submit"]:hover{
+	box-shadow: 2px 2px rgba(0,0,0,0.5);
+	background-color: coral;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.container .home-login span{
+	display: inline-block;
+	margin-top: 50px;
+}
+
+.container .table1 {
+  	font-family: Arial, Helvetica, sans-serif;
+  	width: 100%;
+  	color: #666;
+  	text-shadow: 1px 1px 0px #fff;
+  	background: #eaebec;
+  	border: #ccc 1px solid;
+}
+ 
+.container .table1 th {
+  	padding: 15px 35px;
+  	border-left:1px solid #e0e0e0;
+  	border-bottom: 1px solid #e0e0e0;
+  	background: lightblue;
+}
+ 
+.container .table1 th:first-child{  
+  	border-left:none;
+  	width: 70%;
+}
+
+.container .table1 th:first-child .create{
+	margin: 0;
+	text-decoration: none;
+	float: right;
+	font-weight: bold;
+	color: black;
+	font-size: 16px;
+	padding: 0px 5px;
+	background-color: white;
+	border: none;
+	border-radius: 5px;
+	outline: none;
+	cursor: pointer;
+}
+
+.container .table1 th:first-child .create:hover{
+	box-shadow: 1px 1px 2px black;
+}
+
+.container .table1 tr {
+  	text-align: center;
+  	padding-left: 20px;
+}
+ 
+.container .table1 td:first-child {
+  	text-align: left;
+  	padding-left: 20px;
+  	border-left: 0;
+}
+ 
+.container .table1 td {
+  	padding: 15px 35px;
+  	border-top: 1px solid #ffffff;
+  	border-bottom: 1px solid #e0e0e0;
+  	border-left: 1px solid #e0e0e0;
+  	background: #fafafa;
+  	background: -webkit-gradient(linear, left top, left bottom, from(#fbfbfb), to(#fafafa));
+    background: -moz-linear-gradient(top, #fbfbfb, #fafafa);
+}
+ 
+.container .table1 tr:last-child td {
+  	border-bottom: 0;
+}
+ 
+.container .table1 tr:last-child td:first-child {
+  	-moz-border-radius-bottomleft: 3px;
+  	-webkit-border-bottom-left-radius: 3px;
+  	border-bottom-left-radius: 3px;
+}
+ 
+.container .table1 tr:last-child td:last-child {
+  	-moz-border-radius-bottomright: 3px;
+  	-webkit-border-bottom-right-radius: 3px;
+  	border-bottom-right-radius: 3px;
+}
+ 
+.container .table1 tr:hover td {
+  	background: #f2f2f2;
+  	background: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#f0f0f0));
+    background: -moz-linear-gradient(top, #f2f2f2, #f0f0f0);
+}
+
+.container .table1 tr td a{
+	text-decoration: none;
+	color: black;
+	text-shadow: none;
+}
+
+.container .table1 tr td .edit{
+	padding: 5px 15px;
+	background-color: lightblue;
+	border-radius: 5px;
+}
+
+.container .table1 tr td .edit:hover{
+	box-shadow: 2px 2px 2px rgba(0,0,0,.5);
+}
+
+.container .table1 tr td .delete{
+	padding: 5px 15px;
+	background-color: rgba(255, 61, 61, 1);
+	border-radius: 5px;
+}
+
+.container .table1 tr td .delete:hover{
+	box-shadow: 2px 2px 2px rgba(0,0,0,.5);
+}
+
+
+.container .table2{
+	font-family: Arial;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #ffdccf;
+	padding: 10px 50px; 
+}
+
+.container .table2 th {
+	text-align: center;
+	font-size: 18pt;
+}
+
+.container .table2 .td {
+	min-width: 200px;
+	padding: 10px;
+}
+
+.container .table2 .square {
+	border-radius: 3px;
+	border: 1px solid grey;
+	border-top: 2px solid coral;
+	border-left: 2px solid coral;
+	background-color: white;
+	color: black;
+	min-width: 180px;
+	padding: 3px;
+}
+
+.container .table2 .square .gambar {
+	width: 190px;
+	height: 80px;
+}
+
+.container .table2 .square:hover {
+	box-shadow: 2px 2px coral;
+}
+
+.container .table2 .square a{
+	color: black;
+	font-weight: bold;
+}
+
+.container .table2 .button {
+	border-radius: 3px;
+	background-color: coral;
+	padding: 3px;
+	margin-right: auto;
+	margin-left: auto;
+	height: 30px;
+	text-align: center;
+}
+
+.container .table2 .button a{
+	text-decoration: none;
+	color: black;
+}
+
+.container .classContent .register .editProfile p{
+	font-size: 2px;
+}
+
+.container .profil img{
+	width: 10%;
+	border:solid 2px black;
+	margin-left: 45%;
+
+}
+
+.container .profil h2{
+	text-align: center;
+}
+
+.container .profil p{
+	text-align: center;
+}
+
+.container .profil  input[type="submit"]{
+	margin-top: 20px;
+	background-color: transparent;
+	border-style: none;
+	border-radius: 3px;
+	padding: 10px 30px; 
+	box-shadow: 1px 1px rgba(0,0,0,0.3);
+	margin-left: 45%;
+}
+
+.container .profil input[type="submit"]:hover{
+	box-shadow: 2px 2px rgba(0,0,0,0.5);
+	background-color: coral;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.container .tombol {
+	border-radius: 3px;
+	background-color: white;
+	min-width: 180px;
+	padding: 3px;
+	border: 2px solid coral;
+	margin-right: auto;
+	margin-left: auto;
+	height: 50px;
+	text-align: center;
+	font-size: 15pt;
+}
+
+.container .tombol a{
+	text-decoration: none;
+	color:coral;
+}
+
+.container .tombol:hover {
+	box-shadow: 2px 2px grey;
+}
+
+.container .detailClass{
+	width: 100%;
+	padding: 0px 20px;
+}
+
+.container .detailClass .nameClass{
+	display: inline-block;
+	padding-bottom: 10px;
+	border-bottom: solid 5px coral;
+	border-radius: 3px;
+}
+
+.container .detailClass .descClass{
+	display: block;
+	font-size: 18px;
+}
+
+
+.container .detailLesson{
+	width: 60%;
+	padding: 0px 20px;
+	margin-top: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	border: solid 2px grey;
+	border-radius: 10px;
+}
+
+.container .detailLesson .titleLesson{
+	margin:15px;
+	padding-bottom: 10px;
+	border-bottom: solid 2px coral;
+	text-align: center;
+}
+
+.container .detailLesson .descLesson{
+	display: inline-block;
+	padding: 0px 15px;
+	font-size: 18px;
+	margin-bottom: 15px;
+}
+
+.container .detailLesson .boxFile, .container .boxFile{
+	height: 50px;
+	border: dashed 2px coral;
+	border-radius: 10px;
+	margin: 15px;
+	padding-left: 10px; 
+}
+
+.container .boxFile .nameFile {
+	padding-top: 10px;
+	margin-top: auto;
+	margin-bottom: auto;
+	line-height: 50px;
+	top: 50%;
+	font-weight: bold;
+}
+
+.container .boxFile .desc {
+	font-size: 12px;
+}
+
+.container .detailLesson .boxFile img{
+	height: 30px;
+	width: 30px;
+	margin-top: 10px;
+	float: left;
+}
+
+.container .detailLesson .boxFile .nameFile{
+	display: block;
+	padding: 0px;
+	float: left;
+	margin: 0 10px;
+	line-height: 50px;
+	top: 50%;
+	font-size: 18px;
+	font-style: italic;
+}
+
+.container .detailLesson .boxFile a, .container .boxFile a{
+	display: block;
+	text-decoration: none;
+	float: right;
+	margin-right: 20px;
+	line-height: 30px;
+	top: 20px;
+	margin-top: 9px;
+	border: solid 1px rgba(0,0,0,.3);
+	padding: 0 10px; 
+	border-radius: 10px;
+	color: black;
+}
+
+.container .detailLesson .boxFile a:hover, .container .boxFile a:hover{
+	border-width: 2px;
+	border-color: lightblue;
+	box-shadow: 1px 1px 1px grey;
+}
+
+
+.container .classContent{
+	display: inline-block;
+	width: 100%;
+}
+
+.container .classContent .lesson{
+	float: left;
+	width: 60%;
+	padding: 20px;
+	margin-bottom: 100px;
+}
+
+.container .classContent .lesson .box{
+	width: 100%;
+	padding: auto 0px;
+}
+
+.container .classContent .lesson .box h2{
+	display: inline-block;
+	width: 50%;
+	margin-left: 10px;
+	margin-bottom: 0px;
+}
+
+.container .classContent .lesson .box .upload{
+	margin-top: 17.920px;
+	margin-right: 10px;
+	text-decoration: none;
+	float: right;
+	color: black;
+	font-size: 16px;
+	padding: 6px 10px;
+	background-color: lightblue;
+	border: none;
+	border-radius: 5px;
+	outline: none;
+	cursor: pointer;
+	clear: both;
+
+}
+
+.container .classContent .lesson .box .upload:hover{
+	box-shadow: 1px 1px 2px black;
+	font-weight: bold;
+}
+
+.container .classContent .lesson hr{
+	position: static;
+	height: 0;
+	width: 100%;
+	margin-bottom: 0;
+	border: solid 2px lightblue;
+	border-radius: 50px;
+}
+
+.container .classContent .lesson .boxOuter{
+	width: 100%;
+	padding: 0;
+}
+
+.container .classContent .lesson .boxOuter .boxLesson, .container .classContent .lesson .boxLesson2 {
+	float: left;
+	min-width: 200px;
+	padding: 10px;
+	margin:15px;
+	overflow: hidden;
+}
+
+.container .classContent .lesson .boxOuter .boxLesson:hover .titleLesson, .container .classContent .lesson .boxOuter .boxLesson:hover .descLesson{
+	box-shadow: 2px 2px grey;
+}
+
+.boxLesson2:hover {
+	box-shadow: 3px 3px coral;
+}
+.container .classContent .lesson .boxOuter .boxLesson .titleLesson{
+	background-color: coral;
+	border-radius: 5px 5px 0 0;
+	border: solid 2px coral;
+	border-bottom: none;
+	padding: 5px 10px;
+	font-weight: bold;
+}
+
+.container .classContent .lesson .boxOuter .boxLesson .titleLesson a,.container .classContent .lesson .boxLesson2 a{
+	text-decoration: none;
+	color: black;
+}
+
+.container .classContent .lesson .boxOuter .boxLesson .descLesson{
+	width: 180px;
+	background-color: white;
+	border-radius: 0 0 5px 5px;
+	border: solid 2px coral;
+	border-top: none;
+	padding: 5px 10px;
+	font-style: italic;
+}
+
+.container .classContent .lesson .boxLesson2 .descLesson{
+	font-style: italic;
+}
+
+.container .classContent .lesson .boxOuter .boxLesson .descLesson p{
+	margin: 0px;
+	max-width: 180px;
+}
+
+.boxLesson2 {
+	width:100%;
+	background-color: #ffdccf;
+}
+
+.container .classContent hr{
+	display: block;
+	position: absolute;
+	right: 35.5%;
+	top: 210px;
+	height: 100%;
+	margin-bottom: 100px;
+	border: solid 2px rgba(0,0,0,0.1);
+	border-radius: 50px;
+}
+
+.container .classContent .memberClass{
+	float: right;
+	width: 30%;
+	padding: 20px;
+	margin-bottom: 100px;
+}
+
+.container .classContent .memberClass h2{
+	margin-left: 10px;
+	margin-bottom: 0px;
+}
+
+.container .classContent .memberClass hr{
+	position: static;
+	height: 0;
+	width: 100%;
+	margin-bottom: 0px;
+	border: solid 2px lightblue;
+	border-radius: 50px;
+}
+
+.container .classContent .memberClass .member{
+	display: block;
+	margin: 10px 0px;
+	width: 100%;
+	height: 40px;
+	padding-left: 20px;
+}
+
+.container .classContent .memberClass .member .imgFrame{
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	overflow: hidden;
+	border: solid 0.5px black;
+	float: left;
+	clear: both;
+}
+
+.container .classContent .memberClass .member .imgFrame img{
+	height: 40px;
+	width: 40px;
+}
+.container .classContent .memberClass .member p{
+	display: block;
+	margin:0;
+	padding-top: 11px;
+	padding-left: 10px;
+	float: left;
+}
+
+
+.container .classContent .memberClass .member a{
+	display: inline-block;
+	margin-right: 15px;
+	margin-top: 9px;
+	text-decoration: none;
+	float: right;
+	font-weight: bold;
+	color: black;
+	font-size: 12px;
+	padding: 2px 5px;
+	background-color: red;
+	border: none;
+	border-radius: 5px;
+	outline: none;
+	cursor: pointer;
+}
+
+.container .classContent .memberClass .member a:hover{
+	box-shadow: 1px 1px 1px black;
+}
+
+.container .classContent .editClass{
+	float: left;
+	width: 30%;
+	margin-left: 60px;
+	margin-top: 30px;
+}
+
+.container .classContent .editClass h2{
+	width: 150px;
+
+}
+
+.container .classContent .editClass hr{
+	position: static;
+	height: 0;
+	width: 113px;
+	margin: -12px 0 20px 0;
+	border: solid 2px lightblue;
+	border-radius: 50px;
+}
+
+.container .classContent .editClass input[type="text"]{
+	width: 300px;
+	height: 30px;
+	padding: 0 10px 0 10px;
+	border-radius: 5px;
+}
+
+.container .classContent .editClass textarea{
+	width: 300px;
+	height: 80px;
+	padding: 5px 10px 5px 10px;
+	border-radius: 5px;
+}
+
+.container .classContent .editClass input[type="submit"]{
+	margin-top: 20px;
+	background-color: transparent;
+	border-style: none;
+	border-radius: 3px;
+	padding: 10px 30px; 
+	box-shadow: 1px 1px rgba(0,0,0,0.3);
+}
+
+.container .classContent  .editClass input[type="submit"]:hover{
+	box-shadow: 2px 2px rgba(0,0,0,0.5);
+	background-color: coral;
+	cursor: pointer;
+	font-weight: bold;
+}
+.container .classContent .edit{
+	top: 120px;
+}
+
+.container .classContent .register .editProfile p{
+	font-size: 2px;
+}
+
+
+
+.container .profil{
+	width: 100%;
+	text-align: center;
+	margin-bottom: 200px;
+}
+.container .profil img{
+	margin-left: 0px;
+	width: 120px;
+	height: 160px;
+	border:solid 2px black;
+}
+
+.container .profil h2{
+	text-align: center;
+}
+
+.container .profil p{
+	text-align: center;
+}
+
+.container .profil  input[type="submit"]{
+	margin-top: 20px;
+	background-color: transparent;
+	border-style: none;
+	border-radius: 3px;
+	padding: 10px 30px; 
+	box-shadow: 1px 1px rgba(0,0,0,0.3);
+	margin-left: 45%;
+}
+
+.container .profil input[type="submit"]:hover{
+	box-shadow: 2px 2px rgba(0,0,0,0.5);
+	background-color: coral;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+footer{
+	position: fixed;
+	background-color: white;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	padding: 0px 0px 10px 0px;
+	border-top: solid 2px black;
+	z-index: 1;
+	font-size: 12px;
+}
+.error{
+	color: red;
+	font-weight: bold;
+}
